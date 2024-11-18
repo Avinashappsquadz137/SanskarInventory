@@ -225,19 +225,7 @@ class APIManager: NSObject {
         }
     }
     
-    // GET request example (uncomment if needed)
-    //    class func getDetailFromYouTubeURL(url: String, completionHandler: @escaping (_ result: Bool, _ response: NSDictionary?, _ error: NSError?, _ errorMessage: String?) -> Void) {
-    //        AF.request(url, method: .get).responseJSON { response in
-    //            debugPrint(response)
-    //
-    //            if let dict = response.value {
-    //                completionHandler(true, dict as? NSDictionary, nil, "response")
-    //            } else {
-    //                Loader.hideLoader()
-    //                completionHandler(false, nil, response.error as NSError?, "response")
-    //            }
-    //        }
-    //    }
+
 }
 
 struct BodyStringEncoding: ParameterEncoding {

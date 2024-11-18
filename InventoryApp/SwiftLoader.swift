@@ -68,12 +68,7 @@ open class SwiftLoader: UIView {
         loader.animated = animated
         loader.title = title
         loader.update()
-        
-        //        NotificationCenter.default.addObserver(self, selector: #selector(SwiftLoader.rotated(notification: )),
-        //                                                name: NSNotification.Name.UIDeviceOrientationDidChange,
-        //                                                object: nil)
-        
-        
+
         let height : CGFloat = UIScreen.main.bounds.size.height
         let width : CGFloat = UIScreen.main.bounds.size.width
         let center : CGPoint = CGPoint(x: width / 2.0, y: height / 2.0)

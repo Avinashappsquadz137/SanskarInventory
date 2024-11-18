@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="InventoryViewCell" customModule="InventoryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="148" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="148" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6H-4r-onI" customClass="RoundedView" customModule="InventoryApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="148" height="150"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LuZ-GE-9r5">
+                                <rect key="frame" x="39" y="28" width="70" height="94"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_add_challan" translatesAutoresizingMaskIntoConstraints="NO" id="Odr-jV-xIb">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="LGi-Fn-w2u"/>
+                                            <constraint firstAttribute="height" constant="70" id="RCN-48-jc8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t5-yI-XJi">
+                                        <rect key="frame" x="10" y="70" width="50" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="Y82-NU-4xJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" name="app_black_white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="cellColor"/>
+                        <constraints>
+                            <constraint firstItem="LuZ-GE-9r5" firstAttribute="centerX" secondItem="a6H-4r-onI" secondAttribute="centerX" id="CuP-L8-lk4"/>
+                            <constraint firstItem="LuZ-GE-9r5" firstAttribute="centerY" secondItem="a6H-4r-onI" secondAttribute="centerY" id="hHY-oF-V5V"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="a6H-4r-onI" secondAttribute="bottom" id="2JA-jY-phd"/>
+                <constraint firstItem="a6H-4r-onI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KQ8-Us-1mb"/>
+                <constraint firstAttribute="trailing" secondItem="a6H-4r-onI" secondAttribute="trailing" id="nVH-D2-HLe"/>
+                <constraint firstItem="a6H-4r-onI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zSr-Qp-fs4"/>
+            </constraints>
+            <size key="customSize" width="148" height="150"/>
+            <connections>
+                <outlet property="imgIcon" destination="Odr-jV-xIb" id="gCv-E3-GP9"/>
+                <outlet property="lblName" destination="3t5-yI-XJi" id="Yyl-xl-0Vd"/>
+            </connections>
+            <point key="canvasLocation" x="-18.320610687022899" y="23.943661971830988"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_add_challan" width="67" height="67"/>
+        <namedColor name="app_black_white">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cellColor">
+            <color red="0.82352941176470584" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

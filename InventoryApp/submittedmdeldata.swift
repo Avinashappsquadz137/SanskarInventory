@@ -9,34 +9,34 @@
 import Foundation
 
 struct InventoryResponse: Codable {
-    let status: Bool
-    let message: String
-    let data: [InventoryDetail]
-    let error: String?
+    let status: Bool?
+    let message: String?
+    let data: [InventoryDetail]?
+    let error: ApiError?
 }
 
 // Inventory detail model
 struct InventoryDetail: Codable {
-    let tempID: String
-    let compID: String
-    let name: String
-    let clientName: String
-    let empCode: String
-    let item: String
-    let contactPerson: String
-    let personMobileNo: String
-    let toLocation: String
-    let transportBy: String
-    let showDate: String
-    let startTime: String
-    let endTime: String
-    let loadingDate: String
-    let loadingTime: String
-    let offDate: String
-    let remarks: String
-    let challanDetail: String
-    let products: [Product]
-    let qrCodeList: [String]
+    let tempID: String?
+    let compID: String?
+    let name: String?
+    let clientName: String?
+    let empCode: String?
+    let item: String?
+    let contactPerson: String?
+    let personMobileNo: String?
+    let toLocation: String?
+    let transportBy: String?
+    let showDate: String?
+    let startTime: String?
+    let endTime: String?
+    let loadingDate: String?
+    let loadingTime: String?
+    let offDate: String?
+    let remarks: String?
+    let challanDetail: String?
+    let products: [Product]?
+    let qrCodeList: [String]?
     
     enum CodingKeys: String, CodingKey {
         case tempID = "TEMP_ID"
@@ -64,14 +64,14 @@ struct InventoryDetail: Codable {
 
 // Product model
 struct Product: Codable {
-    let itemMasterID: String
-    let itemName: String
-    let itemQRStr: String
-    let itemQRThumbnail: String
-    let modelNo: String
-    let brand: String
-    let itemCategory: String
-    let categoryName: String
+    let itemMasterID: String?
+    let itemName: String?
+    let itemQRStr: String?
+    let itemQRThumbnail: String?
+    let modelNo: String?
+    let brand: String?
+    let itemCategory: String?
+    let categoryName: String?
     
     enum CodingKeys: String, CodingKey {
         case itemMasterID = "ITEM_MASTER_ID"
@@ -83,4 +83,41 @@ struct Product: Codable {
         case itemCategory = "ITEM_CATEGORY"
         case categoryName
     }
+}
+struct ApiError : Codable {
+    let error_code : Int?
+    let error_message : String?
+    let errors : Errors?
+
+    enum CodingKeys: String, CodingKey {
+
+        case error_code = "error_code"
+        case error_message = "error_message"
+        case errors = "errors"
+    }
+
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        error_code = try values.decodeIfPresent(Int.self, forKey: .error_code)
+        error_message = try values.decodeIfPresent(String.self, forKey: .error_message)
+        errors = try values.decodeIfPresent(Errors.self, forKey: .errors)
+    }
+
+}
+struct Errors : Codable {
+    let emp_code : String?
+    let type : String?
+
+    enum CodingKeys: String, CodingKey {
+
+        case emp_code = "emp_code"
+        case type = "type"
+    }
+
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        emp_code = try values.decodeIfPresent(String.self, forKey: .emp_code)
+        type = try values.decodeIfPresent(String.self, forKey: .type)
+    }
+
 }

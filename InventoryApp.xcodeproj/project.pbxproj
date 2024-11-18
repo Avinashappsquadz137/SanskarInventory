@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		40298CBFF833D03B53C87638 /* Pods_InventoryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8995627B38E1BE0255B03F12 /* Pods_InventoryApp.framework */; };
+		6877E95E2CEA0D8B0052EAE8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877E95C2CEA0D8B0052EAE8 /* ApiClient.swift */; };
+		6877E9622CEA0F520052EAE8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877E9612CEA0F520052EAE8 /* Constant.swift */; };
+		6877E9652CEA16D10052EAE8 /* InventoryDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877E9642CEA16CA0052EAE8 /* InventoryDetailModel.swift */; };
 		C71B80512CE1FAAE0071CD33 /* createchallanvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80502CE1FAAE0071CD33 /* createchallanvc.swift */; };
 		C71B80552CE1FADA0071CD33 /* Returnchallanvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80542CE1FADA0071CD33 /* Returnchallanvc.swift */; };
 		C71B80572CE1FAE70071CD33 /* submittedmdeldata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80562CE1FAE70071CD33 /* submittedmdeldata.swift */; };
@@ -21,7 +24,6 @@
 		C71B80672CE1FB3C0071CD33 /* Addinventordetailvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80662CE1FB3C0071CD33 /* Addinventordetailvc.swift */; };
 		C74A0CC92C58D03A00201F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CC82C58D03A00201F40 /* AppDelegate.swift */; };
 		C74A0CCB2C58D03A00201F40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CCA2C58D03A00201F40 /* SceneDelegate.swift */; };
-		C74A0CCD2C58D03A00201F40 /* Homevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CCC2C58D03A00201F40 /* Homevc.swift */; };
 		C74A0CD22C58D03B00201F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74A0CD12C58D03B00201F40 /* Assets.xcassets */; };
 		C74A0CD52C58D03B00201F40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74A0CD32C58D03B00201F40 /* LaunchScreen.storyboard */; };
 		C74A0CDD2C58D05700201F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74A0CDC2C58D05700201F40 /* Main.storyboard */; };
@@ -43,11 +45,20 @@
 		C7CF2C262C9B0E7F0052A1AA /* Requestdetailvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */; };
 		C7CF2C292C9D4F2C0052A1AA /* requestdetailcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C272C9D4F2C0052A1AA /* requestdetailcell.swift */; };
 		C7CF2C2A2C9D4F2C0052A1AA /* requestdetailcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7CF2C282C9D4F2C0052A1AA /* requestdetailcell.xib */; };
+		C7E7E3C52CE8BE2A006A00C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3C42CE8BE2A006A00C6 /* HomeViewController.swift */; };
+		C7E7E3C82CE8C16F006A00C6 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3C72CE8C16F006A00C6 /* BaseVC.swift */; };
+		C7E7E3CB2CE8C43D006A00C6 /* ViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3CA2CE8C43D006A00C6 /* ViewDesign.swift */; };
+		C7E7E3CD2CE8C5BD006A00C6 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E7E3CC2CE8C5BD006A00C6 /* Color.xcassets */; };
+		C7E7E3D12CE8C9EE006A00C6 /* InventoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3CF2CE8C9EE006A00C6 /* InventoryViewCell.swift */; };
+		C7E7E3D22CE8C9EE006A00C6 /* InventoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E7E3D02CE8C9EE006A00C6 /* InventoryViewCell.xib */; };
 		D5BA75FE2C6F574300B13F89 /* IosDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA75FC2C6F574300B13F89 /* IosDatePicker.swift */; };
 		D5BA75FF2C6F574300B13F89 /* IosDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5BA75FD2C6F574300B13F89 /* IosDatePicker.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6877E95C2CEA0D8B0052EAE8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		6877E9612CEA0F520052EAE8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		6877E9642CEA16CA0052EAE8 /* InventoryDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetailModel.swift; sourceTree = "<group>"; };
 		8995627B38E1BE0255B03F12 /* Pods_InventoryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InventoryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C4FA20A10E949576FF645A /* Pods-InventoryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoryApp.release.xcconfig"; path = "Target Support Files/Pods-InventoryApp/Pods-InventoryApp.release.xcconfig"; sourceTree = "<group>"; };
 		C71B80502CE1FAAE0071CD33 /* createchallanvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createchallanvc.swift; sourceTree = "<group>"; };
@@ -64,7 +75,6 @@
 		C74A0CC52C58D03A00201F40 /* InventoryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventoryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74A0CC82C58D03A00201F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C74A0CCA2C58D03A00201F40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C74A0CCC2C58D03A00201F40 /* Homevc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homevc.swift; sourceTree = "<group>"; };
 		C74A0CD12C58D03B00201F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C74A0CD42C58D03B00201F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C74A0CD62C58D03B00201F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +97,12 @@
 		C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestdetailvc.swift; sourceTree = "<group>"; };
 		C7CF2C272C9D4F2C0052A1AA /* requestdetailcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requestdetailcell.swift; sourceTree = "<group>"; };
 		C7CF2C282C9D4F2C0052A1AA /* requestdetailcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = requestdetailcell.xib; sourceTree = "<group>"; };
+		C7E7E3C42CE8BE2A006A00C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C7E7E3C72CE8C16F006A00C6 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		C7E7E3CA2CE8C43D006A00C6 /* ViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDesign.swift; sourceTree = "<group>"; };
+		C7E7E3CC2CE8C5BD006A00C6 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		C7E7E3CF2CE8C9EE006A00C6 /* InventoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewCell.swift; sourceTree = "<group>"; };
+		C7E7E3D02CE8C9EE006A00C6 /* InventoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InventoryViewCell.xib; sourceTree = "<group>"; };
 		CD79C23557A714A7208714EF /* Pods-InventoryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoryApp.debug.xcconfig"; path = "Target Support Files/Pods-InventoryApp/Pods-InventoryApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D5BA75FC2C6F574300B13F89 /* IosDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosDatePicker.swift; sourceTree = "<group>"; };
 		D5BA75FD2C6F574300B13F89 /* IosDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IosDatePicker.xib; sourceTree = "<group>"; };
@@ -111,6 +127,23 @@
 				B1C4FA20A10E949576FF645A /* Pods-InventoryApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6877E95D2CEA0D8B0052EAE8 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				6877E9612CEA0F520052EAE8 /* Constant.swift */,
+				6877E95C2CEA0D8B0052EAE8 /* ApiClient.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		6877E9632CEA16BC0052EAE8 /* SubmitChallan */ = {
+			isa = PBXGroup;
+			children = (
+				6877E9642CEA16CA0052EAE8 /* InventoryDetailModel.swift */,
+			);
+			path = SubmitChallan;
 			sourceTree = "<group>";
 		};
 		C74A0CBC2C58D03A00201F40 = {
@@ -138,10 +171,11 @@
 				C7DCCAF42C5E05A200E72E22 /* Helpers */,
 				C7DCCAF22C5E057900E72E22 /* Submitchallanpages */,
 				C759F63B2C60B40300A982A0 /* Misscealaneousitem */,
+				C7E7E3C32CE8BDF5006A00C6 /* Controller */,
 				C7DCCAF52C5E05DD00E72E22 /* Storyboard */,
-				C74A0CCC2C58D03A00201F40 /* Homevc.swift */,
 				C71B80502CE1FAAE0071CD33 /* createchallanvc.swift */,
 				C74A0CD12C58D03B00201F40 /* Assets.xcassets */,
+				C7E7E3CC2CE8C5BD006A00C6 /* Color.xcassets */,
 				C74A0CD62C58D03B00201F40 /* Info.plist */,
 				C74A0CF12C5A1AB400201F40 /* SwiftLoader.swift */,
 				C71B80542CE1FADA0071CD33 /* Returnchallanvc.swift */,
@@ -200,6 +234,8 @@
 		C7DCCAF42C5E05A200E72E22 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6877E95D2CEA0D8B0052EAE8 /* ApiClient */,
+				C7E7E3C92CE8C3E9006A00C6 /* DesignClass */,
 				C74A0CEB2C5A167200201F40 /* APIManager.swift */,
 				C74A0CED2C5A172500201F40 /* Loader.swift */,
 				C74A0CEF2C5A185C00201F40 /* APIConstant.swift */,
@@ -214,6 +250,42 @@
 				C74A0CD32C58D03B00201F40 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		C7E7E3C32CE8BDF5006A00C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6877E9632CEA16BC0052EAE8 /* SubmitChallan */,
+				C7E7E3CE2CE8C99F006A00C6 /* Cell */,
+				C7E7E3C62CE8C148006A00C6 /* BaseViewC */,
+				C7E7E3C42CE8BE2A006A00C6 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C7E7E3C62CE8C148006A00C6 /* BaseViewC */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7E3C72CE8C16F006A00C6 /* BaseVC.swift */,
+			);
+			path = BaseViewC;
+			sourceTree = "<group>";
+		};
+		C7E7E3C92CE8C3E9006A00C6 /* DesignClass */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7E3CA2CE8C43D006A00C6 /* ViewDesign.swift */,
+			);
+			path = DesignClass;
+			sourceTree = "<group>";
+		};
+		C7E7E3CE2CE8C99F006A00C6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7E3CF2CE8C9EE006A00C6 /* InventoryViewCell.swift */,
+				C7E7E3D02CE8C9EE006A00C6 /* InventoryViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F6F8809461007DC575D4CE7D /* Frameworks */ = {
@@ -291,6 +363,8 @@
 				C759F63A2C60B3FB00A982A0 /* misscealaneouscell.xib in Resources */,
 				C759F6452C62192400A982A0 /* Inventoryitemcell.xib in Resources */,
 				C74A0CD52C58D03B00201F40 /* LaunchScreen.storyboard in Resources */,
+				C7E7E3D22CE8C9EE006A00C6 /* InventoryViewCell.xib in Resources */,
+				C7E7E3CD2CE8C5BD006A00C6 /* Color.xcassets in Resources */,
 				C74A0CD22C58D03B00201F40 /* Assets.xcassets in Resources */,
 				C7CF2C242C9AFC670052A1AA /* requestdatacell.xib in Resources */,
 			);
@@ -346,12 +420,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7CF2C232C9AFC670052A1AA /* requestdatacell.swift in Sources */,
+				6877E9622CEA0F520052EAE8 /* Constant.swift in Sources */,
 				C71B80632CE1FB170071CD33 /* dropdownfile.swift in Sources */,
 				C71B805F2CE1FB170071CD33 /* Additemvc.swift in Sources */,
+				6877E95E2CEA0D8B0052EAE8 /* ApiClient.swift in Sources */,
 				C74A0CEC2C5A167200201F40 /* APIManager.swift in Sources */,
+				C7E7E3CB2CE8C43D006A00C6 /* ViewDesign.swift in Sources */,
 				C7CF2C202C9AFA300052A1AA /* Request model.swift in Sources */,
 				C71B80552CE1FADA0071CD33 /* Returnchallanvc.swift in Sources */,
-				C74A0CCD2C58D03A00201F40 /* Homevc.swift in Sources */,
 				C7CF2C262C9B0E7F0052A1AA /* Requestdetailvc.swift in Sources */,
 				C71B80612CE1FB170071CD33 /* openpdfvc.swift in Sources */,
 				C74A0CEA2C591B5A00201F40 /* submitchallanvc.swift in Sources */,
@@ -362,13 +438,17 @@
 				C71B80642CE1FB170071CD33 /* requestdatamodel.swift in Sources */,
 				C74A0CE72C591A2100201F40 /* datatablecell.swift in Sources */,
 				D5BA75FE2C6F574300B13F89 /* IosDatePicker.swift in Sources */,
+				6877E9652CEA16D10052EAE8 /* InventoryDetailModel.swift in Sources */,
 				C71B80572CE1FAE70071CD33 /* submittedmdeldata.swift in Sources */,
 				C74A0CCB2C58D03A00201F40 /* SceneDelegate.swift in Sources */,
+				C7E7E3C82CE8C16F006A00C6 /* BaseVC.swift in Sources */,
+				C7E7E3C52CE8BE2A006A00C6 /* HomeViewController.swift in Sources */,
 				C74A0CF02C5A185C00201F40 /* APIConstant.swift in Sources */,
 				C759F6442C62192400A982A0 /* Inventoryitemcell.swift in Sources */,
 				C74A0CF22C5A1AB400201F40 /* SwiftLoader.swift in Sources */,
 				C71B80512CE1FAAE0071CD33 /* createchallanvc.swift in Sources */,
 				C71B80622CE1FB170071CD33 /* Requestvc.swift in Sources */,
+				C7E7E3D12CE8C9EE006A00C6 /* InventoryViewCell.swift in Sources */,
 				C74A0CEE2C5A172500201F40 /* Loader.swift in Sources */,
 				C759F6362C60ADB500A982A0 /* misscealaneousmodel.swift in Sources */,
 				C759F6392C60B3FB00A982A0 /* misscealaneouscell.swift in Sources */,
@@ -526,6 +606,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -556,6 +637,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

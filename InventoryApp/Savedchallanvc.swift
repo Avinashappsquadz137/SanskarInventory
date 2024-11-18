@@ -38,8 +38,8 @@ class Savedchallanvc: UIViewController {
                 print(JSONData)
                 do {
                     let welcome = try JSONDecoder().decode(InventoryResponse.self, from: JSONData)
-                    if welcome.status {
-                        self.dataList = welcome.data
+                    if welcome.status ?? false {
+                        self.dataList = welcome.data ?? []
                         DispatchQueue.main.async {
                             self.tableview.reloadData() // Assuming you have an IBOutlet for the table view
                         }
