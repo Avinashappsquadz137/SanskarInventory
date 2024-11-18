@@ -31,7 +31,7 @@ class Additemvc: UIViewController {
         itemtable.dataSource = self
         self.addmisscealaneousview.layer.cornerRadius = 10
         self.addmisscealaneousview.isHidden = true
-        getmisscealaneousdetail()
+       // getmisscealaneousdetail()
         
         // Setup tap gesture recognizer
         tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
@@ -56,32 +56,32 @@ class Additemvc: UIViewController {
         tapGesture?.isEnabled = false // Disable tap gesture
     }
 
-    func getmisscealaneousdetail() {
-        let dict = [String: Any]()
-        APIManager.apiCall(postData: dict as NSDictionary, url: misscealaneousapi) { result, response, error, data in
-            DispatchQueue.main.async {
-                Loader.hideLoader()
-            }
-            if let JSONData = data {
-                print(JSONData)
-                do {
-                    let response = try JSONDecoder().decode(MiscellaneousItemResponse.self, from: JSONData)
-                    if response.status {
-                        self.miscellaneousItems = response.data
-                        DispatchQueue.main.async {
-                            self.updateDropdownData()
-                        }
-                    } else {
-                        print(response.message)
-                    }
-                } catch {
-                    print("Error decoding JSON: \(error)")
-                }
-            } else if let error = error {
-                print("API call error: \(error)")
-            }
-        }
-    }
+//    func getmisscealaneousdetail() {
+//        let dict = [String: Any]()
+//        APIManager.apiCall(postData: dict as NSDictionary, url: Constant.misscealaneousapi) { result, response, error, data in
+//            DispatchQueue.main.async {
+//                Loader.hideLoader()
+//            }
+//            if let JSONData = data {
+//                print(JSONData)
+//                do {
+//                    let response = try JSONDecoder().decode(MiscellaneousItemResponse.self, from: JSONData)
+//                    if response.status {
+//                        self.miscellaneousItems = response.data
+//                        DispatchQueue.main.async {
+//                            self.updateDropdownData()
+//                        }
+//                    } else {
+//                        print(response.message)
+//                    }
+//                } catch {
+//                    print("Error decoding JSON: \(error)")
+//                }
+//            } else if let error = error {
+//                print("API call error: \(error)")
+//            }
+//        }
+//    }
 
     private func updateDropdownData() {
         let itemNames = miscellaneousItems.map { $0.misc_item_name }

@@ -18,39 +18,39 @@ class Requestvc: UIViewController {
         tableview.register(UINib(nibName: "requestdatacell", bundle: nil), forCellReuseIdentifier: "requestdatacell")
         tableview.delegate = self
         tableview.dataSource = self
-        getRequestDetail()
+       // getRequestDetail()
     }
     
-    func getRequestDetail() {
-            var dict = [String: Any]()
-            dict["emp_code"] = "SANS-00290"
-            
-            APIManager.apiCall(postData: dict as NSDictionary, url: requestdetailapi) { result, response, error, data in
-                DispatchQueue.main.async {
-                    Loader.hideLoader()
-                }
-                if let JSONData = data {
-                    print(JSONData)
-                    do {
-                        let response = try JSONDecoder().decode(Requestresponsedata.self, from: JSONData)
-                        if response.status {
-                            
-                            self.dataList = response.data
-                            print(self.dataList)
-                            DispatchQueue.main.async {
-                                self.tableview.reloadData()
-                            }
-                        } else {
-                            print(response.message)
-                        }
-                    } catch {
-                        print("Error decoding JSON: \(error)")
-                    }
-                } else if let error = error {
-                    print("API call error: \(error)")
-                }
-            }
-        }
+//    func getRequestDetail() {
+//            var dict = [String: Any]()
+//            dict["emp_code"] = "SANS-00290"
+//            
+//        APIManager.apiCall(postData: dict as NSDictionary, url: Constant.requestdetailapi) { result, response, error, data in //Constant.submitedlistapi
+//                DispatchQueue.main.async {
+//                    Loader.hideLoader()
+//                }
+//                if let JSONData = data {
+//                    print(JSONData)
+//                    do {
+//                        let response = try JSONDecoder().decode(Requestresponsedata.self, from: JSONData)
+//                        if response.status {
+//                            
+//                            self.dataList = response.data
+//                            print(self.dataList)
+//                            DispatchQueue.main.async {
+//                                self.tableview.reloadData()
+//                            }
+//                        } else {
+//                            print(response.message)
+//                        }
+//                    } catch {
+//                        print("Error decoding JSON: \(error)")
+//                    }
+//                } else if let error = error {
+//                    print("API call error: \(error)")
+//                }
+//            }
+//        }
     
     
     @IBAction func backbtn(_ sender: UIButton) {
