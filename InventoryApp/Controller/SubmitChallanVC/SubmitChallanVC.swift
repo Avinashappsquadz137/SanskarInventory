@@ -60,9 +60,8 @@ extension submitchallanvc: UITableViewDelegate,UITableViewDataSource{
     
     func openPDF(for section: Int) {
            let pdfData = dataList[section].challanDetail
-           let pdfBaseURL = "https://sap.sanskargroup.in/Files/"
+           let pdfBaseURL = "https://store.totalbhakti.com/Files/"
         let pdfURLString = pdfBaseURL + (pdfData ?? "")
-
            if let pdfURL = URL(string: pdfURLString) {
                let vc = self.storyboard?.instantiateViewController(withIdentifier: "openpdfvc") as! openpdfvc
                vc.pdfURL = pdfURL
