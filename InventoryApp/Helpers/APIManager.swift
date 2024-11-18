@@ -21,7 +21,7 @@ typealias responseHandler = (_ result: Bool, _ response: NSDictionary?, _ error:
 class APIManager: NSObject {
     
     class func getServerPath() -> String {
-        let serverPath: String = BASEURL
+        let serverPath: String = Constant.BASEURL
         return serverPath
     }
     
@@ -35,7 +35,7 @@ class APIManager: NSObject {
     }
     
     class func getServerPath2() -> String {
-        let serverPath: String = bookingBase
+        let serverPath: String = Constant.bookingBase
         return serverPath
     }
     

@@ -27,9 +27,7 @@
 		C74A0CD22C58D03B00201F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74A0CD12C58D03B00201F40 /* Assets.xcassets */; };
 		C74A0CD52C58D03B00201F40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74A0CD32C58D03B00201F40 /* LaunchScreen.storyboard */; };
 		C74A0CDD2C58D05700201F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74A0CDC2C58D05700201F40 /* Main.storyboard */; };
-		C74A0CE72C591A2100201F40 /* datatablecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CE52C591A2100201F40 /* datatablecell.swift */; };
-		C74A0CE82C591A2100201F40 /* datatablecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C74A0CE62C591A2100201F40 /* datatablecell.xib */; };
-		C74A0CEA2C591B5A00201F40 /* submitchallanvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CE92C591B5A00201F40 /* submitchallanvc.swift */; };
+		C74A0CEA2C591B5A00201F40 /* SubmitChallanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CE92C591B5A00201F40 /* SubmitChallanVC.swift */; };
 		C74A0CEC2C5A167200201F40 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CEB2C5A167200201F40 /* APIManager.swift */; };
 		C74A0CEE2C5A172500201F40 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CED2C5A172500201F40 /* Loader.swift */; };
 		C74A0CF22C5A1AB400201F40 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CF12C5A1AB400201F40 /* SwiftLoader.swift */; };
@@ -80,9 +78,7 @@
 		C74A0CD42C58D03B00201F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C74A0CD62C58D03B00201F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C74A0CDC2C58D05700201F40 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C74A0CE52C591A2100201F40 /* datatablecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datatablecell.swift; sourceTree = "<group>"; };
-		C74A0CE62C591A2100201F40 /* datatablecell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = datatablecell.xib; sourceTree = "<group>"; };
-		C74A0CE92C591B5A00201F40 /* submitchallanvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = submitchallanvc.swift; sourceTree = "<group>"; };
+		C74A0CE92C591B5A00201F40 /* SubmitChallanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitChallanVC.swift; sourceTree = "<group>"; };
 		C74A0CEB2C5A167200201F40 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		C74A0CED2C5A172500201F40 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		C74A0CF12C5A1AB400201F40 /* SwiftLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
@@ -171,7 +167,7 @@
 			children = (
 				C7DCCAF32C5E059200E72E22 /* Delegates */,
 				C7DCCAF42C5E05A200E72E22 /* Helpers */,
-				C7DCCAF22C5E057900E72E22 /* Submitchallanpages */,
+				6877E9632CEA16BC0052EAE8 /* SubmitChallan */,
 				C759F63B2C60B40300A982A0 /* Misscealaneousitem */,
 				C7E7E3C32CE8BDF5006A00C6 /* Controller */,
 				C7DCCAF52C5E05DD00E72E22 /* Storyboard */,
@@ -189,7 +185,6 @@
 				C71B805E2CE1FB170071CD33 /* QRCodeScannerViewController.swift */,
 				C71B805D2CE1FB170071CD33 /* requestdatamodel.swift */,
 				C71B805B2CE1FB170071CD33 /* Requestvc.swift */,
-				C7E7E3DA2CEB19D8006A00C6 /* SaveChallan */,
 				D5BA75FD2C6F574300B13F89 /* IosDatePicker.xib */,
 				C759F6422C62192400A982A0 /* Inventoryitemcell.swift */,
 				C759F6432C62192400A982A0 /* Inventoryitemcell.xib */,
@@ -214,16 +209,12 @@
 			path = Misscealaneousitem;
 			sourceTree = "<group>";
 		};
-		C7DCCAF22C5E057900E72E22 /* Submitchallanpages */ = {
+		C7DCCAF22C5E057900E72E22 /* SubmitChallanVC */ = {
 			isa = PBXGroup;
 			children = (
-				C74A0CE52C591A2100201F40 /* datatablecell.swift */,
-				C74A0CE62C591A2100201F40 /* datatablecell.xib */,
-				C74A0CE92C591B5A00201F40 /* submitchallanvc.swift */,
-				C7E7E3D62CEB0EEA006A00C6 /* ChallanViewCell.swift */,
-				C7E7E3D72CEB0EEA006A00C6 /* ChallanViewCell.xib */,
+				C74A0CE92C591B5A00201F40 /* SubmitChallanVC.swift */,
 			);
-			path = Submitchallanpages;
+			path = SubmitChallanVC;
 			sourceTree = "<group>";
 		};
 		C7DCCAF32C5E059200E72E22 /* Delegates */ = {
@@ -258,10 +249,11 @@
 		C7E7E3C32CE8BDF5006A00C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6877E9632CEA16BC0052EAE8 /* SubmitChallan */,
+				C7DCCAF22C5E057900E72E22 /* SubmitChallanVC */,
 				C7E7E3CE2CE8C99F006A00C6 /* Cell */,
 				C7E7E3C62CE8C148006A00C6 /* BaseViewC */,
-				C7E7E3C42CE8BE2A006A00C6 /* HomeViewController.swift */,
+				C7E7E3DA2CEB19D8006A00C6 /* SaveChallan */,
+				C7E7E3DB2CEB2068006A00C6 /* HomeVC */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +277,8 @@
 		C7E7E3CE2CE8C99F006A00C6 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C7E7E3D62CEB0EEA006A00C6 /* ChallanViewCell.swift */,
+				C7E7E3D72CEB0EEA006A00C6 /* ChallanViewCell.xib */,
 				C7E7E3CF2CE8C9EE006A00C6 /* InventoryViewCell.swift */,
 				C7E7E3D02CE8C9EE006A00C6 /* InventoryViewCell.xib */,
 			);
@@ -297,6 +291,14 @@
 				C71B80592CE1FB170071CD33 /* Savedchallanvc.swift */,
 			);
 			path = SaveChallan;
+			sourceTree = "<group>";
+		};
+		C7E7E3DB2CEB2068006A00C6 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7E3C42CE8BE2A006A00C6 /* HomeViewController.swift */,
+			);
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
 		F6F8809461007DC575D4CE7D /* Frameworks */ = {
@@ -368,7 +370,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5BA75FF2C6F574300B13F89 /* IosDatePicker.xib in Resources */,
-				C74A0CE82C591A2100201F40 /* datatablecell.xib in Resources */,
 				C74A0CDD2C58D05700201F40 /* Main.storyboard in Resources */,
 				C7CF2C2A2C9D4F2C0052A1AA /* requestdetailcell.xib in Resources */,
 				C759F63A2C60B3FB00A982A0 /* misscealaneouscell.xib in Resources */,
@@ -443,13 +444,12 @@
 				C71B80552CE1FADA0071CD33 /* Returnchallanvc.swift in Sources */,
 				C7CF2C262C9B0E7F0052A1AA /* Requestdetailvc.swift in Sources */,
 				C71B80612CE1FB170071CD33 /* openpdfvc.swift in Sources */,
-				C74A0CEA2C591B5A00201F40 /* submitchallanvc.swift in Sources */,
+				C74A0CEA2C591B5A00201F40 /* SubmitChallanVC.swift in Sources */,
 				C71B80672CE1FB3C0071CD33 /* Addinventordetailvc.swift in Sources */,
 				C71B80602CE1FB170071CD33 /* Savedchallanvc.swift in Sources */,
 				C7CF2C292C9D4F2C0052A1AA /* requestdetailcell.swift in Sources */,
 				C74A0CC92C58D03A00201F40 /* AppDelegate.swift in Sources */,
 				C71B80642CE1FB170071CD33 /* requestdatamodel.swift in Sources */,
-				C74A0CE72C591A2100201F40 /* datatablecell.swift in Sources */,
 				D5BA75FE2C6F574300B13F89 /* IosDatePicker.swift in Sources */,
 				6877E9652CEA16D10052EAE8 /* InventoryDetailModel.swift in Sources */,
 				C71B80572CE1FAE70071CD33 /* submittedmdeldata.swift in Sources */,
