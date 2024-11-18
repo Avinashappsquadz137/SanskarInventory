@@ -10,7 +10,7 @@ import UIKit
 class Returnchallanvc: BaseVC {
     var data = [
         ("QR Challan", "icon_qr_code"), ("Challan No", "icon_number")]
-    
+    var qrCodeModel = QRCodeModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +31,7 @@ extension Returnchallanvc: UICollectionViewDataSource , UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? InventoryViewCell else {
-            return UICollectionViewCell()
-        }
+            return UICollectionViewCell()}
         let item = data[indexPath.row]
         let name = item.0
         let image = UIImage(named: item.1)
@@ -43,9 +42,28 @@ extension Returnchallanvc: UICollectionViewDataSource , UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = data[indexPath.row]
         let name = selectedItem.0
-        print(name)
+        switch name {
+        case "QR Challan":
+            let scannerVC = QRCodeScannerViewController()
+            scannerVC.didScanQRCode = { [weak self] scannedCode in
+                guard let self = self else { return }
+                self.qrCodeModel.addCode(scannedCode)
+                self.printAllScannedCodes()
+            }
+            self.navigationController?.pushViewController(scannerVC, animated: true)
+        case "Challan No":
+            let vc = storyboard?.instantiateViewController(withIdentifier: "Returnchallanvc") as! Returnchallanvc
+            navigationController?.pushViewController(vc, animated: true)
+
+        default:
+            print("No action defined for \(name)")
+        }
+        
     }
-    
+    func printAllScannedCodes() {
+           let allScannedCodesString = qrCodeModel.scannedCodes.joined(separator: ", ")
+           print("All scanned codes: \(allScannedCodesString)")
+       }
     //MARK: FlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let xPadding: CGFloat = 10

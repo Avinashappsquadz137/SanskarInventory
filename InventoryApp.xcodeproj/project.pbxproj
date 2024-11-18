@@ -36,8 +36,6 @@
 		C759F6452C62192400A982A0 /* Inventoryitemcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C759F6432C62192400A982A0 /* Inventoryitemcell.xib */; };
 		C7CF2C202C9AFA300052A1AA /* Request model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C1F2C9AFA300052A1AA /* Request model.swift */; };
 		C7CF2C262C9B0E7F0052A1AA /* Requestdetailvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */; };
-		C7CF2C292C9D4F2C0052A1AA /* requestdetailcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C272C9D4F2C0052A1AA /* requestdetailcell.swift */; };
-		C7CF2C2A2C9D4F2C0052A1AA /* requestdetailcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7CF2C282C9D4F2C0052A1AA /* requestdetailcell.xib */; };
 		C7E7E3C52CE8BE2A006A00C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3C42CE8BE2A006A00C6 /* HomeViewController.swift */; };
 		C7E7E3C82CE8C16F006A00C6 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3C72CE8C16F006A00C6 /* BaseVC.swift */; };
 		C7E7E3CB2CE8C43D006A00C6 /* ViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3CA2CE8C43D006A00C6 /* ViewDesign.swift */; };
@@ -46,6 +44,8 @@
 		C7E7E3D22CE8C9EE006A00C6 /* InventoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E7E3D02CE8C9EE006A00C6 /* InventoryViewCell.xib */; };
 		C7E7E3D82CEB0EEA006A00C6 /* ChallanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3D62CEB0EEA006A00C6 /* ChallanViewCell.swift */; };
 		C7E7E3D92CEB0EEA006A00C6 /* ChallanViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E7E3D72CEB0EEA006A00C6 /* ChallanViewCell.xib */; };
+		C7E7E3E22CEB5BDF006A00C6 /* RequestDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3E02CEB5BDF006A00C6 /* RequestDetailCell.swift */; };
+		C7E7E3E32CEB5BDF006A00C6 /* RequestDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E7E3E12CEB5BDF006A00C6 /* RequestDetailCell.xib */; };
 		D5BA75FE2C6F574300B13F89 /* IosDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BA75FC2C6F574300B13F89 /* IosDatePicker.swift */; };
 		D5BA75FF2C6F574300B13F89 /* IosDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5BA75FD2C6F574300B13F89 /* IosDatePicker.xib */; };
 /* End PBXBuildFile section */
@@ -83,8 +83,6 @@
 		C759F6432C62192400A982A0 /* Inventoryitemcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Inventoryitemcell.xib; sourceTree = "<group>"; };
 		C7CF2C1F2C9AFA300052A1AA /* Request model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request model.swift"; sourceTree = "<group>"; };
 		C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestdetailvc.swift; sourceTree = "<group>"; };
-		C7CF2C272C9D4F2C0052A1AA /* requestdetailcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requestdetailcell.swift; sourceTree = "<group>"; };
-		C7CF2C282C9D4F2C0052A1AA /* requestdetailcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = requestdetailcell.xib; sourceTree = "<group>"; };
 		C7E7E3C42CE8BE2A006A00C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C7E7E3C72CE8C16F006A00C6 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		C7E7E3CA2CE8C43D006A00C6 /* ViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDesign.swift; sourceTree = "<group>"; };
@@ -93,6 +91,8 @@
 		C7E7E3D02CE8C9EE006A00C6 /* InventoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InventoryViewCell.xib; sourceTree = "<group>"; };
 		C7E7E3D62CEB0EEA006A00C6 /* ChallanViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallanViewCell.swift; sourceTree = "<group>"; };
 		C7E7E3D72CEB0EEA006A00C6 /* ChallanViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallanViewCell.xib; sourceTree = "<group>"; };
+		C7E7E3E02CEB5BDF006A00C6 /* RequestDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetailCell.swift; sourceTree = "<group>"; };
+		C7E7E3E12CEB5BDF006A00C6 /* RequestDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestDetailCell.xib; sourceTree = "<group>"; };
 		CD79C23557A714A7208714EF /* Pods-InventoryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoryApp.debug.xcconfig"; path = "Target Support Files/Pods-InventoryApp/Pods-InventoryApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D5BA75FC2C6F574300B13F89 /* IosDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosDatePicker.swift; sourceTree = "<group>"; };
 		D5BA75FD2C6F574300B13F89 /* IosDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IosDatePicker.xib; sourceTree = "<group>"; };
@@ -166,14 +166,10 @@
 				C71B805A2CE1FB170071CD33 /* openpdfvc.swift */,
 				C71B805E2CE1FB170071CD33 /* QRCodeScannerViewController.swift */,
 				C71B805D2CE1FB170071CD33 /* requestdatamodel.swift */,
-				C71B805B2CE1FB170071CD33 /* Requestvc.swift */,
 				D5BA75FD2C6F574300B13F89 /* IosDatePicker.xib */,
 				C759F6422C62192400A982A0 /* Inventoryitemcell.swift */,
 				C759F6432C62192400A982A0 /* Inventoryitemcell.xib */,
 				C71B80662CE1FB3C0071CD33 /* Addinventordetailvc.swift */,
-				C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */,
-				C7CF2C272C9D4F2C0052A1AA /* requestdetailcell.swift */,
-				C7CF2C282C9D4F2C0052A1AA /* requestdetailcell.xib */,
 			);
 			path = InventoryApp;
 			sourceTree = "<group>";
@@ -232,6 +228,7 @@
 				C7E7E3C62CE8C148006A00C6 /* BaseViewC */,
 				C7E7E3DA2CEB19D8006A00C6 /* SaveChallan */,
 				C7E7E3DC2CEB35BF006A00C6 /* ReturnChallanVC */,
+				C7E7E3DE2CEB5B4D006A00C6 /* RequestVC */,
 				C7E7E3DB2CEB2068006A00C6 /* HomeVC */,
 			);
 			path = Controller;
@@ -295,6 +292,25 @@
 				C71B80562CE1FAE70071CD33 /* InventoryModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C7E7E3DE2CEB5B4D006A00C6 /* RequestVC */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7E3DF2CEB5B9B006A00C6 /* Cell */,
+				C71B805B2CE1FB170071CD33 /* Requestvc.swift */,
+				C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */,
+			);
+			path = RequestVC;
+			sourceTree = "<group>";
+		};
+		C7E7E3DF2CEB5B9B006A00C6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7E3E02CEB5BDF006A00C6 /* RequestDetailCell.swift */,
+				C7E7E3E12CEB5BDF006A00C6 /* RequestDetailCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F6F8809461007DC575D4CE7D /* Frameworks */ = {
@@ -367,7 +383,7 @@
 			files = (
 				D5BA75FF2C6F574300B13F89 /* IosDatePicker.xib in Resources */,
 				C74A0CDD2C58D05700201F40 /* Main.storyboard in Resources */,
-				C7CF2C2A2C9D4F2C0052A1AA /* requestdetailcell.xib in Resources */,
+				C7E7E3E32CEB5BDF006A00C6 /* RequestDetailCell.xib in Resources */,
 				C759F63A2C60B3FB00A982A0 /* misscealaneouscell.xib in Resources */,
 				C759F6452C62192400A982A0 /* Inventoryitemcell.xib in Resources */,
 				C7E7E3D92CEB0EEA006A00C6 /* ChallanViewCell.xib in Resources */,
@@ -441,11 +457,11 @@
 				C74A0CEA2C591B5A00201F40 /* SubmitChallanVC.swift in Sources */,
 				C71B80672CE1FB3C0071CD33 /* Addinventordetailvc.swift in Sources */,
 				C71B80602CE1FB170071CD33 /* Savedchallanvc.swift in Sources */,
-				C7CF2C292C9D4F2C0052A1AA /* requestdetailcell.swift in Sources */,
 				C74A0CC92C58D03A00201F40 /* AppDelegate.swift in Sources */,
 				C71B80642CE1FB170071CD33 /* requestdatamodel.swift in Sources */,
 				D5BA75FE2C6F574300B13F89 /* IosDatePicker.swift in Sources */,
 				C71B80572CE1FAE70071CD33 /* InventoryModel.swift in Sources */,
+				C7E7E3E22CEB5BDF006A00C6 /* RequestDetailCell.swift in Sources */,
 				C74A0CCB2C58D03A00201F40 /* SceneDelegate.swift in Sources */,
 				C7E7E3C82CE8C16F006A00C6 /* BaseVC.swift in Sources */,
 				C7E7E3C52CE8BE2A006A00C6 /* HomeViewController.swift in Sources */,

@@ -67,8 +67,7 @@ extension Requestvc {
     private func didTapOpenButton(at index: Int) {
         let itemsList = dataList[index].items
         openItemsList(itemsList)
-    }
-    
+    }    
     private func openItemsList(_ items: [Item]) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "Requestdetailvc") as? Requestdetailvc else {
             return

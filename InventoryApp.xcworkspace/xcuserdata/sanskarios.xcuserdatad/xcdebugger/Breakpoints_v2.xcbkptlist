@@ -3,4 +3,507 @@
    uuid = "B1603E4F-4BE9-4D74-8B5C-C76944F75C7D"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FDF4950-A200-47B3-8DF1-A0AE60A4D6FD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InventoryApp/Additemvc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "Addinventorybtnaction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8FDF4950-A200-47B3-8DF1-A0AE60A4D6FD - 7daa45992c26ae11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Additemvc.Addinventorybtnaction(__C.UIButton) -&gt; ()"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Additemvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "8FDF4950-A200-47B3-8DF1-A0AE60A4D6FD - 6f7e7572bb4254fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in InventoryApp.Additemvc.Addinventorybtnaction(__C.UIButton) -&gt; ()"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Additemvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "8FDF4950-A200-47B3-8DF1-A0AE60A4D6FD - 7daa45992c26ae11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Additemvc.Addinventorybtnaction(__C.UIButton) -&gt; ()"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Additemvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33E10505-ECA2-441E-9DF5-D41264DC2C2D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InventoryApp/Additemvc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "addmisscealaneousbtnaction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "33E10505-ECA2-441E-9DF5-D41264DC2C2D - 60908c5e7dc9711d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Additemvc.addmisscealaneousbtnaction(__C.UIButton) -&gt; ()"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Additemvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "33E10505-ECA2-441E-9DF5-D41264DC2C2D - 60908c5e7dc9711d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Additemvc.addmisscealaneousbtnaction(__C.UIButton) -&gt; ()"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Additemvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3716C289-C03C-4A17-9808-4A4C94E29305"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InventoryApp/Additemvc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3716C289-C03C-4A17-9808-4A4C94E29305 - 6fb0722d091a76fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Additemvc.viewDidLoad() -&gt; ()"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Additemvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1844">
+               </Location>
+               <Location
+                  uuid = "3716C289-C03C-4A17-9808-4A4C94E29305 - 6fb0722d091a76fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Additemvc.viewDidLoad() -&gt; ()"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Additemvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1780">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9F6D198-8052-4C8E-8FB9-F7E5C0A3D9A4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InventoryApp/Requestdetailvc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "Requestdetailvc"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D9F6D198-8052-4C8E-8FB9-F7E5C0A3D9A4 - 9173bfa216fdbb49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.tabledetail.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "D9F6D198-8052-4C8E-8FB9-F7E5C0A3D9A4 - baeda9ddc783cf55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.tabledetail.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "D9F6D198-8052-4C8E-8FB9-F7E5C0A3D9A4 - 3ebfc1c547b31438"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.tabledetail.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "D9F6D198-8052-4C8E-8FB9-F7E5C0A3D9A4 - f857583548ec5f09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.tabledetail.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "D9F6D198-8052-4C8E-8FB9-F7E5C0A3D9A4 - 688109ef20d57260"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; InventoryApp.Requestdetailvc"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "D9F6D198-8052-4C8E-8FB9-F7E5C0A3D9A4 - 500b9555c757455b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;InventoryApp.Requestdetailvc&gt;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06EAC6A1-BA3F-4416-AA37-573463F24532"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InventoryApp/Requestvc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "openItemsList(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D3AA5D1-3D40-40E7-B737-1E3A31DC01AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InventoryApp/Requestvc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "786399B9-B022-4C2B-8B6E-6BD218991AC4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "786399B9-B022-4C2B-8B6E-6BD218991AC4 - a62e02c591092b72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "532">
+               </Location>
+               <Location
+                  uuid = "786399B9-B022-4C2B-8B6E-6BD218991AC4 - a62e02c591092b72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "786399B9-B022-4C2B-8B6E-6BD218991AC4 - a62e02c591092b72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "548">
+               </Location>
+               <Location
+                  uuid = "786399B9-B022-4C2B-8B6E-6BD218991AC4 - a62e02c591092b72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "572">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7BCAD62D-C3FB-439D-89BA-1D189884732A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "Requestdetailvc"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7BCAD62D-C3FB-439D-89BA-1D189884732A - 13a47804a37dfad2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.itemdetails.getter : Swift.Array&lt;InventoryApp.Item&gt;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "7BCAD62D-C3FB-439D-89BA-1D189884732A - b01f3ed20a7f1360"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.itemdetails.setter : Swift.Array&lt;InventoryApp.Item&gt;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7BCAD62D-C3FB-439D-89BA-1D189884732A - dd64aa689a504691"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.itemdetails.modify : Swift.Array&lt;InventoryApp.Item&gt;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7BCAD62D-C3FB-439D-89BA-1D189884732A - 815414e158989849"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.itemdetails.modify : Swift.Array&lt;InventoryApp.Item&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "7BCAD62D-C3FB-439D-89BA-1D189884732A - 81ba6218ad069fb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; InventoryApp.Requestdetailvc"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "7BCAD62D-C3FB-439D-89BA-1D189884732A - 30913a9b6d525ec0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InventoryApp.Requestdetailvc.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;InventoryApp.Requestdetailvc&gt;"
+                  moduleName = "InventoryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sanskarios/Documents/Appsquadz/SanskarInventory/InventoryApp/Controller/RequestVC/Requestdetailvc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFF3DAB7-382B-49A0-887F-CF5706A4163A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InventoryApp/Controller/RequestVC/Cell/RequestDetailCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "configureCell(itemName:maxQuantity:selectedQuantity:rentPerItem:totalRent:gst:isChecked:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

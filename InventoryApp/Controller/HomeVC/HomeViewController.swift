@@ -68,7 +68,6 @@ extension HomeViewController: UICollectionViewDataSource , UICollectionViewDeleg
         }
     }
 
-    
    //MARK: FlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let xPadding: CGFloat = 10

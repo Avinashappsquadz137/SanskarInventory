@@ -43,7 +43,7 @@ class ChallanViewCell: UITableViewCell {
         lblContactPerson.attributedText = formattedText(label: "CONTACT PERSON", value: detail.contactPerson)
         lblVanue.attributedText = formattedText(label: "VANUE", value: detail.toLocation)
         lblDate.attributedText = formattedText(label: "SHOW DATE", value: detail.showDate)
-        btnOpen.setTitle("OPEN PDF", for: .normal)
+        btnOpen.setTitle("OPEN", for: .normal)
     }
     private func formattedText(label: String, value: String) -> NSAttributedString {
         let attributedString = NSMutableAttributedString()
@@ -75,6 +75,4 @@ class ChallanViewCell: UITableViewCell {
     @IBAction func btnActions(_ sender: UIButton) {
         buttonAction?()
     }
-    
-    
 }

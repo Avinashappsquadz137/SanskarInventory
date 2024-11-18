@@ -26,7 +26,6 @@ class submitchallanvc: BaseVC {
     }
 }
 //MARK: TableView
-
 extension submitchallanvc: UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return dataList.count
