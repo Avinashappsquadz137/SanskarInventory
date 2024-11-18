@@ -48,7 +48,6 @@ extension HomeViewController: UICollectionViewDataSource , UICollectionViewDeleg
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = data[indexPath.section][indexPath.row]
         let name = selectedItem.0
-        print("Selected item: \(name)")
         switch name {
         case "Create Challan":
             let vc = storyboard?.instantiateViewController(withIdentifier: "createchallanvc") as! createchallanvc

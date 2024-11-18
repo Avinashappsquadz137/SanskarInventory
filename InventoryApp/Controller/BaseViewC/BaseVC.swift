@@ -18,4 +18,7 @@ class BaseVC: UIViewController {
        
     }
     
+    @IBAction func backbtn(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
