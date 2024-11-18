@@ -613,6 +613,9 @@
                                 <state key="normal" image="arrow.backward" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                 </state>
+                                <connections>
+                                    <action selector="backbtn:" destination="xZI-La-95R" eventType="touchUpInside" id="1L0-XL-3sF"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-I9-ApX">
                                 <rect key="frame" x="0.0" y="129" width="393" height="689"/>

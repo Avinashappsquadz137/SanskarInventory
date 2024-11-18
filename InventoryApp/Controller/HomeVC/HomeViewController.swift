@@ -8,10 +8,8 @@
 import UIKit
 
 class HomeViewController: BaseVC {
-    
-    var data = [
-        [("Create Challan", "icon_add_challan"), ("Saved Challan", "saved_challa")],
-        [("Submit Challan", "submitted_challan"), ("Return Challan", "return_challan"), ("Requests", "submitted_challan")]]
+
+    var data = [("Create Challan", "icon_add_challan"),("Saved Challan", "saved_challa"),("Submit Challan", "submitted_challan"), ("Return Challan", "return_challan"), ("Requests", "submitted_challan")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,20 +23,16 @@ class HomeViewController: BaseVC {
 }
 
 //MARK: CollectionView
-extension HomeViewController: UICollectionViewDataSource , UICollectionViewDelegateFlowLayout  {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return data.count
-    }
-    
+extension HomeViewController: UICollectionViewDataSource , UICollectionViewDelegateFlowLayout  {  
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data[section].count
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? InventoryViewCell else {
             return UICollectionViewCell()
         }
-        let item = data[indexPath.section][indexPath.row]
+        let item = data[indexPath.row]
         let name = item.0
         let image = UIImage(named: item.1)
         cell.configureCell(with: name, image: image)
@@ -46,7 +40,7 @@ extension HomeViewController: UICollectionViewDataSource , UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedItem = data[indexPath.section][indexPath.row]
+        let selectedItem = data[indexPath.row]
         let name = selectedItem.0
         switch name {
         case "Create Challan":

@@ -37,6 +37,13 @@ class ChallanViewCell: UITableViewCell {
         lblVanue.attributedText = formattedText(label: "VANUE", value: detail.toLocation ?? "")
         lblDate.attributedText = formattedText(label: "SHOW DATE", value: detail.showDate ?? "")
         btnOpen.setTitle("OPEN PDF", for: .normal)
+    } 
+    func configurees(with detail: ItemDetail) {
+        lblClientName.attributedText = formattedText(label: "CLIENT NAME", value: detail.clientName)
+        lblContactPerson.attributedText = formattedText(label: "CONTACT PERSON", value: detail.contactPerson)
+        lblVanue.attributedText = formattedText(label: "VANUE", value: detail.toLocation)
+        lblDate.attributedText = formattedText(label: "SHOW DATE", value: detail.showDate)
+        btnOpen.setTitle("OPEN PDF", for: .normal)
     }
     private func formattedText(label: String, value: String) -> NSAttributedString {
         let attributedString = NSMutableAttributedString()
@@ -71,33 +78,3 @@ class ChallanViewCell: UITableViewCell {
     
     
 }
-
-
-/*
- @IBOutlet weak var mainview: UIView!
- @IBOutlet weak var dateLbl: UILabel!
- @IBOutlet weak var locationlbl: UILabel!
- @IBOutlet weak var openbtn: UIButton!
- @IBOutlet weak var clientnamelbl: UILabel!
- @IBOutlet weak var contactpersonname: UILabel!
- 
- 
- var buttonAction: (() -> Void)?
-
-    
- 
- override func awakeFromNib() {
-     super.awakeFromNib()
-     self.mainview.layer.cornerRadius = 10
-     dateLbl.textColor = UIColor.black
-     locationlbl.textColor  = UIColor.black
-   
- }
-
- @IBAction func openButtonTapped(_ sender: UIButton) {
-     buttonAction?()
- }
- 
-}
-
- */

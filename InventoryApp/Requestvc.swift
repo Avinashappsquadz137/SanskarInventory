@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Requestvc: UIViewController {
+class Requestvc: BaseVC {
     
     @IBOutlet weak var tableview:UITableView!
     
@@ -15,125 +15,91 @@ class Requestvc: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableview.register(UINib(nibName: "requestdatacell", bundle: nil), forCellReuseIdentifier: "requestdatacell")
+         uiUpdate()
+    }
+
+    func uiUpdate() {
+        tableview.register(UINib(nibName: "ChallanViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableview.delegate = self
         tableview.dataSource = self
-       // getRequestDetail()
-    }
-    
-//    func getRequestDetail() {
-//            var dict = [String: Any]()
-//            dict["emp_code"] = "SANS-00290"
-//            
-//        APIManager.apiCall(postData: dict as NSDictionary, url: Constant.requestdetailapi) { result, response, error, data in //Constant.submitedlistapi
-//                DispatchQueue.main.async {
-//                    Loader.hideLoader()
-//                }
-//                if let JSONData = data {
-//                    print(JSONData)
-//                    do {
-//                        let response = try JSONDecoder().decode(Requestresponsedata.self, from: JSONData)
-//                        if response.status {
-//                            
-//                            self.dataList = response.data
-//                            print(self.dataList)
-//                            DispatchQueue.main.async {
-//                                self.tableview.reloadData()
-//                            }
-//                        } else {
-//                            print(response.message)
-//                        }
-//                    } catch {
-//                        print("Error decoding JSON: \(error)")
-//                    }
-//                } else if let error = error {
-//                    print("API call error: \(error)")
-//                }
-//            }
-//        }
-    
-    
-    @IBAction func backbtn(_ sender: UIButton) {
-        
-        self.navigationController?.popViewController(animated: true)
-        
+        getRequestDetail()
     }
 }
-extension Requestvc: UITableViewDelegate, UITableViewDataSource, RequestDataCellDelegate {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return dataList.count
-    }
+
+extension Requestvc: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return dataList.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "requestdatacell", for: indexPath) as! requestdatacell
-        let datum = dataList[indexPath.section]
-        
-        cell.clientnamelbl.text = datum.clientName
-        cell.locationlbl.text = datum.toLocation
-        cell.contactpersonlbl.text = datum.contactPerson
-        cell.datelbl.text = datum.showDate
-        cell.openbtn.setTitle("Open", for: .normal)
-        
-        // Set the delegate and section index for the cell
-        cell.delegate = self
-        cell.sectionIndex = indexPath.section
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ChallanViewCell else {
+                   return UITableViewCell()}
+        let detail = dataList[indexPath.row]
+            cell.configurees(with: detail)
+            cell.buttonAction = { [weak self] in
+                self?.didTapOpenButton(at: indexPath.row)
+                print("Button tapped for \(detail.clientName)")
+            }
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 210
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 15
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = UIColor.clear
+        if #available(iOS 15.0, *) {
+            view.backgroundColor = UIColor.clear
+        } else {
+        }
         return view
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 15
+    }
     
-    // Delegate method to handle button tap
-    func didTapOpenButton(at index: Int) {
+}
+
+// MARK: - Button Action Handlers
+extension Requestvc {
+    
+    private func didTapOpenButton(at index: Int) {
         let itemsList = dataList[index].items
         openItemsList(itemsList)
     }
     
-    func openItemsList(_ items: [Item]) {
-        // Example to pass items to openpdfvc
-        let vc = storyboard?.instantiateViewController(withIdentifier: "Requestdetailvc") as! Requestdetailvc
-        vc.itemdetails = items // Assuming openpdfvc has a property `itemsList`
+    private func openItemsList(_ items: [Item]) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "Requestdetailvc") as? Requestdetailvc else {
+            return
+        }
+        vc.itemdetails = items
         navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
-    
-    
-
-    
-
-    
-//    func openPDF(for section: Int) {
-//           let pdfData = dataList[section].challanDetail
-//           let pdfBaseURL = "https://sap.sanskargroup.in/Files/"
-//           let pdfURLString = pdfBaseURL + pdfData
-//
-//           if let pdfURL = URL(string: pdfURLString) {
-//               let vc = self.storyboard?.instantiateViewController(withIdentifier: "openpdfvc") as! openpdfvc
-//               vc.pdfURL = pdfURL
-//               self.navigationController?.pushViewController(vc, animated: true)
-//           } else {
-//               // Handle invalid URL case
-//               print("Invalid URL string: \(pdfURLString)")
-//           }
-//       }
-
-    
+}
+//MARK: - API Calling
+extension Requestvc {
+    func getRequestDetail() {
+            var dict = [String: Any]()
+            dict["emp_code"] = "SANS-00290"
+        APIManager.apiCall(postData: dict as NSDictionary, url: Constant.requestdetailapi) { result, response, error, data in
+                if let JSONData = data {
+                    do {
+                        let response = try JSONDecoder().decode(Requestresponsedata.self, from: JSONData)
+                        if response.status {
+                            self.dataList = response.data ?? []
+                            DispatchQueue.main.async {
+                                self.tableview.reloadData()
+                            }
+                        } else {
+                            print(response.message)
+                        }
+                    } catch {
+                        print("Error decoding JSON: \(error)")
+                    }
+                } else if let error = error {
+                    print("API call error: \(error)")
+                }
+            }
+        }
 }

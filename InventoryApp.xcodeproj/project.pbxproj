@@ -12,7 +12,7 @@
 		6877E9622CEA0F520052EAE8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877E9612CEA0F520052EAE8 /* Constant.swift */; };
 		C71B80512CE1FAAE0071CD33 /* createchallanvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80502CE1FAAE0071CD33 /* createchallanvc.swift */; };
 		C71B80552CE1FADA0071CD33 /* ReturnChallanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80542CE1FADA0071CD33 /* ReturnChallanVC.swift */; };
-		C71B80572CE1FAE70071CD33 /* submittedmdeldata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80562CE1FAE70071CD33 /* submittedmdeldata.swift */; };
+		C71B80572CE1FAE70071CD33 /* InventoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80562CE1FAE70071CD33 /* InventoryModel.swift */; };
 		C71B805F2CE1FB170071CD33 /* Additemvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80582CE1FB170071CD33 /* Additemvc.swift */; };
 		C71B80602CE1FB170071CD33 /* Savedchallanvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B80592CE1FB170071CD33 /* Savedchallanvc.swift */; };
 		C71B80612CE1FB170071CD33 /* openpdfvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B805A2CE1FB170071CD33 /* openpdfvc.swift */; };
@@ -28,7 +28,6 @@
 		C74A0CDD2C58D05700201F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74A0CDC2C58D05700201F40 /* Main.storyboard */; };
 		C74A0CEA2C591B5A00201F40 /* SubmitChallanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CE92C591B5A00201F40 /* SubmitChallanVC.swift */; };
 		C74A0CEC2C5A167200201F40 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CEB2C5A167200201F40 /* APIManager.swift */; };
-		C74A0CEE2C5A172500201F40 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CED2C5A172500201F40 /* Loader.swift */; };
 		C74A0CF22C5A1AB400201F40 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A0CF12C5A1AB400201F40 /* SwiftLoader.swift */; };
 		C759F6362C60ADB500A982A0 /* misscealaneousmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C759F6352C60ADB500A982A0 /* misscealaneousmodel.swift */; };
 		C759F6392C60B3FB00A982A0 /* misscealaneouscell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C759F6372C60B3FB00A982A0 /* misscealaneouscell.swift */; };
@@ -36,8 +35,6 @@
 		C759F6442C62192400A982A0 /* Inventoryitemcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C759F6422C62192400A982A0 /* Inventoryitemcell.swift */; };
 		C759F6452C62192400A982A0 /* Inventoryitemcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C759F6432C62192400A982A0 /* Inventoryitemcell.xib */; };
 		C7CF2C202C9AFA300052A1AA /* Request model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C1F2C9AFA300052A1AA /* Request model.swift */; };
-		C7CF2C232C9AFC670052A1AA /* requestdatacell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C212C9AFC670052A1AA /* requestdatacell.swift */; };
-		C7CF2C242C9AFC670052A1AA /* requestdatacell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7CF2C222C9AFC670052A1AA /* requestdatacell.xib */; };
 		C7CF2C262C9B0E7F0052A1AA /* Requestdetailvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */; };
 		C7CF2C292C9D4F2C0052A1AA /* requestdetailcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C272C9D4F2C0052A1AA /* requestdetailcell.swift */; };
 		C7CF2C2A2C9D4F2C0052A1AA /* requestdetailcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7CF2C282C9D4F2C0052A1AA /* requestdetailcell.xib */; };
@@ -60,7 +57,7 @@
 		B1C4FA20A10E949576FF645A /* Pods-InventoryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InventoryApp.release.xcconfig"; path = "Target Support Files/Pods-InventoryApp/Pods-InventoryApp.release.xcconfig"; sourceTree = "<group>"; };
 		C71B80502CE1FAAE0071CD33 /* createchallanvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createchallanvc.swift; sourceTree = "<group>"; };
 		C71B80542CE1FADA0071CD33 /* ReturnChallanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnChallanVC.swift; sourceTree = "<group>"; };
-		C71B80562CE1FAE70071CD33 /* submittedmdeldata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = submittedmdeldata.swift; sourceTree = "<group>"; };
+		C71B80562CE1FAE70071CD33 /* InventoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryModel.swift; sourceTree = "<group>"; };
 		C71B80582CE1FB170071CD33 /* Additemvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Additemvc.swift; sourceTree = "<group>"; };
 		C71B80592CE1FB170071CD33 /* Savedchallanvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Savedchallanvc.swift; sourceTree = "<group>"; };
 		C71B805A2CE1FB170071CD33 /* openpdfvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = openpdfvc.swift; sourceTree = "<group>"; };
@@ -78,7 +75,6 @@
 		C74A0CDC2C58D05700201F40 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C74A0CE92C591B5A00201F40 /* SubmitChallanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitChallanVC.swift; sourceTree = "<group>"; };
 		C74A0CEB2C5A167200201F40 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		C74A0CED2C5A172500201F40 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		C74A0CF12C5A1AB400201F40 /* SwiftLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
 		C759F6352C60ADB500A982A0 /* misscealaneousmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = misscealaneousmodel.swift; sourceTree = "<group>"; };
 		C759F6372C60B3FB00A982A0 /* misscealaneouscell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = misscealaneouscell.swift; sourceTree = "<group>"; };
@@ -86,8 +82,6 @@
 		C759F6422C62192400A982A0 /* Inventoryitemcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventoryitemcell.swift; sourceTree = "<group>"; };
 		C759F6432C62192400A982A0 /* Inventoryitemcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Inventoryitemcell.xib; sourceTree = "<group>"; };
 		C7CF2C1F2C9AFA300052A1AA /* Request model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request model.swift"; sourceTree = "<group>"; };
-		C7CF2C212C9AFC670052A1AA /* requestdatacell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requestdatacell.swift; sourceTree = "<group>"; };
-		C7CF2C222C9AFC670052A1AA /* requestdatacell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = requestdatacell.xib; sourceTree = "<group>"; };
 		C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestdetailvc.swift; sourceTree = "<group>"; };
 		C7CF2C272C9D4F2C0052A1AA /* requestdetailcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requestdetailcell.swift; sourceTree = "<group>"; };
 		C7CF2C282C9D4F2C0052A1AA /* requestdetailcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = requestdetailcell.xib; sourceTree = "<group>"; };
@@ -158,6 +152,7 @@
 				C7DCCAF32C5E059200E72E22 /* Delegates */,
 				C7DCCAF42C5E05A200E72E22 /* Helpers */,
 				C759F63B2C60B40300A982A0 /* Misscealaneousitem */,
+				C7E7E3DD2CEB3857006A00C6 /* Model */,
 				C7E7E3C32CE8BDF5006A00C6 /* Controller */,
 				C7DCCAF52C5E05DD00E72E22 /* Storyboard */,
 				C71B80502CE1FAAE0071CD33 /* createchallanvc.swift */,
@@ -165,7 +160,6 @@
 				C7E7E3CC2CE8C5BD006A00C6 /* Color.xcassets */,
 				C74A0CD62C58D03B00201F40 /* Info.plist */,
 				C74A0CF12C5A1AB400201F40 /* SwiftLoader.swift */,
-				C71B80562CE1FAE70071CD33 /* submittedmdeldata.swift */,
 				D5BA75FC2C6F574300B13F89 /* IosDatePicker.swift */,
 				C71B80582CE1FB170071CD33 /* Additemvc.swift */,
 				C71B805C2CE1FB170071CD33 /* dropdownfile.swift */,
@@ -176,10 +170,7 @@
 				D5BA75FD2C6F574300B13F89 /* IosDatePicker.xib */,
 				C759F6422C62192400A982A0 /* Inventoryitemcell.swift */,
 				C759F6432C62192400A982A0 /* Inventoryitemcell.xib */,
-				C7CF2C1F2C9AFA300052A1AA /* Request model.swift */,
-				C7CF2C212C9AFC670052A1AA /* requestdatacell.swift */,
 				C71B80662CE1FB3C0071CD33 /* Addinventordetailvc.swift */,
-				C7CF2C222C9AFC670052A1AA /* requestdatacell.xib */,
 				C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */,
 				C7CF2C272C9D4F2C0052A1AA /* requestdetailcell.swift */,
 				C7CF2C282C9D4F2C0052A1AA /* requestdetailcell.xib */,
@@ -220,7 +211,6 @@
 				6877E95D2CEA0D8B0052EAE8 /* ApiClient */,
 				C7E7E3C92CE8C3E9006A00C6 /* DesignClass */,
 				C74A0CEB2C5A167200201F40 /* APIManager.swift */,
-				C74A0CED2C5A172500201F40 /* Loader.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -296,6 +286,15 @@
 				C71B80542CE1FADA0071CD33 /* ReturnChallanVC.swift */,
 			);
 			path = ReturnChallanVC;
+			sourceTree = "<group>";
+		};
+		C7E7E3DD2CEB3857006A00C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7CF2C1F2C9AFA300052A1AA /* Request model.swift */,
+				C71B80562CE1FAE70071CD33 /* InventoryModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F6F8809461007DC575D4CE7D /* Frameworks */ = {
@@ -376,7 +375,6 @@
 				C7E7E3D22CE8C9EE006A00C6 /* InventoryViewCell.xib in Resources */,
 				C7E7E3CD2CE8C5BD006A00C6 /* Color.xcassets in Resources */,
 				C74A0CD22C58D03B00201F40 /* Assets.xcassets in Resources */,
-				C7CF2C242C9AFC670052A1AA /* requestdatacell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +428,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7E7E3D82CEB0EEA006A00C6 /* ChallanViewCell.swift in Sources */,
-				C7CF2C232C9AFC670052A1AA /* requestdatacell.swift in Sources */,
 				6877E9622CEA0F520052EAE8 /* Constant.swift in Sources */,
 				C71B80632CE1FB170071CD33 /* dropdownfile.swift in Sources */,
 				C71B805F2CE1FB170071CD33 /* Additemvc.swift in Sources */,
@@ -448,7 +445,7 @@
 				C74A0CC92C58D03A00201F40 /* AppDelegate.swift in Sources */,
 				C71B80642CE1FB170071CD33 /* requestdatamodel.swift in Sources */,
 				D5BA75FE2C6F574300B13F89 /* IosDatePicker.swift in Sources */,
-				C71B80572CE1FAE70071CD33 /* submittedmdeldata.swift in Sources */,
+				C71B80572CE1FAE70071CD33 /* InventoryModel.swift in Sources */,
 				C74A0CCB2C58D03A00201F40 /* SceneDelegate.swift in Sources */,
 				C7E7E3C82CE8C16F006A00C6 /* BaseVC.swift in Sources */,
 				C7E7E3C52CE8BE2A006A00C6 /* HomeViewController.swift in Sources */,
@@ -457,7 +454,6 @@
 				C71B80512CE1FAAE0071CD33 /* createchallanvc.swift in Sources */,
 				C71B80622CE1FB170071CD33 /* Requestvc.swift in Sources */,
 				C7E7E3D12CE8C9EE006A00C6 /* InventoryViewCell.swift in Sources */,
-				C74A0CEE2C5A172500201F40 /* Loader.swift in Sources */,
 				C759F6362C60ADB500A982A0 /* misscealaneousmodel.swift in Sources */,
 				C759F6392C60B3FB00A982A0 /* misscealaneouscell.swift in Sources */,
 				C71B80652CE1FB170071CD33 /* QRCodeScannerViewController.swift in Sources */,

@@ -9,7 +9,7 @@ import Foundation
 struct Requestresponsedata: Codable {
     let status: Bool
     let message: String
-    let data: [ItemDetail]
+    let data: [ItemDetail]?
     let error: String?
 }
 
