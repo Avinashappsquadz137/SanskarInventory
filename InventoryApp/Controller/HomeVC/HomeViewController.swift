@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: BaseVC {
 
-    var data = [("Create Challan", "icon_add_challan"),("Saved Challan", "saved_challa"),("Submit Challan", "submitted_challan"), ("Return Challan", "return_challan"), ("Requests", "submitted_challan")]
+    var data = [("Saved Challan", "saved_challa"),("Submit Challan", "submitted_challan"), ("Return Challan", "return_challan"), ("Order List", "submitted_challan")] //("Create Challan", "icon_add_challan"),
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +55,7 @@ extension HomeViewController: UICollectionViewDataSource , UICollectionViewDeleg
             let vc = storyboard?.instantiateViewController(withIdentifier: "submitchallanvc") as! submitchallanvc
             navigationController?.pushViewController(vc, animated: true)
             
-        case "Requests":
+        case "Order List":
             let vc = storyboard?.instantiateViewController(withIdentifier: "Requestvc") as! Requestvc
             navigationController?.pushViewController(vc, animated: true)
             

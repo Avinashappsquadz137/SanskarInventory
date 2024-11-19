@@ -40,9 +40,9 @@ extension Requestdetailvc: UITableViewDelegate,UITableViewDataSource {
            cell.configureCell(
                itemName: item.itemName,
                maxQuantity: item.quantity,
-               selectedQuantity: item.category,
-               rentPerItem: "5",
-               totalRent: "5",
+               selectedQuantity: "0", // This is update value when you are scane
+               rentPerItem: "",
+               totalRent: "0",
                gst: "5",
                isChecked: true
            )

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Additemvc: UIViewController {
+class Additemvc: BaseVC {
 
     @IBOutlet weak var itemtable: UITableView!
     @IBOutlet weak var countlbl: UILabel!
@@ -24,8 +24,8 @@ class Additemvc: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setPlaceholderColor(textField: additemfield, placeholderText: "Add Item", color: UIColor.black)
-        setPlaceholderColor(textField: addquantityview, placeholderText: "Add Qunantity", color: UIColor.black)
+//        setPlaceholderColor(textField: additemfield, placeholderText: "Add Item", color: UIColor.black)
+//        setPlaceholderColor(textField: addquantityview, placeholderText: "Add Qunantity", color: UIColor.black)
         
 
         itemtable.register(UINib(nibName: "misscealaneouscell", bundle: nil), forCellReuseIdentifier: "misscealaneouscell")
@@ -90,9 +90,6 @@ class Additemvc: UIViewController {
         additemfield.dropdownData = itemNames
     }
 
-    @IBAction func backbtn(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-    }
 
     @IBAction func SAveaction(_ sender: UIButton) {
         // Save action code
