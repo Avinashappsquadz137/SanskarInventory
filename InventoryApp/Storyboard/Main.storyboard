@@ -1147,26 +1147,62 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cai-mj-GmN">
-                                <rect key="frame" x="0.0" y="90" width="393" height="762"/>
+                                <rect key="frame" x="0.0" y="90" width="393" height="678"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxn-9N-2Zh" customClass="RoundedView" customModule="InventoryApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="768" width="353" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG5-cD-LwM">
+                                        <rect key="frame" x="2" y="2" width="349" height="48"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                        <connections>
+                                            <action selector="btnActionSubmit:" destination="xuo-qT-S0Q" eventType="touchUpInside" id="jJf-Dk-1nf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gG5-cD-LwM" secondAttribute="bottom" id="A2M-js-N2U"/>
+                                    <constraint firstAttribute="trailing" secondItem="gG5-cD-LwM" secondAttribute="trailing" constant="2" id="Snv-9h-cxf"/>
+                                    <constraint firstItem="gG5-cD-LwM" firstAttribute="top" secondItem="Wxn-9N-2Zh" secondAttribute="top" constant="2" id="YdF-XR-IYr"/>
+                                    <constraint firstAttribute="height" constant="50" id="a4Y-0E-YMN"/>
+                                    <constraint firstItem="gG5-cD-LwM" firstAttribute="leading" secondItem="Wxn-9N-2Zh" secondAttribute="leading" constant="2" id="vzq-Af-iSr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="cellColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Cc-WJ-uLg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Cai-mj-GmN" firstAttribute="top" secondItem="Gbl-Xk-2AC" secondAttribute="bottom" constant="10" id="G16-C5-uFg"/>
+                            <constraint firstItem="Wxn-9N-2Zh" firstAttribute="bottom" secondItem="6Cc-WJ-uLg" secondAttribute="bottom" id="KQe-zw-hBN"/>
+                            <constraint firstItem="6Cc-WJ-uLg" firstAttribute="trailing" secondItem="Wxn-9N-2Zh" secondAttribute="trailing" constant="20" id="OcQ-ri-avl"/>
+                            <constraint firstItem="Wxn-9N-2Zh" firstAttribute="top" secondItem="Cai-mj-GmN" secondAttribute="bottom" id="bDN-IA-ZTg"/>
                             <constraint firstItem="0He-8F-Gkl" firstAttribute="top" secondItem="5du-LR-TUI" secondAttribute="top" id="dN5-jH-C5c"/>
                             <constraint firstItem="0He-8F-Gkl" firstAttribute="leading" secondItem="6Cc-WJ-uLg" secondAttribute="leading" id="f2v-XC-wjK"/>
                             <constraint firstItem="Cai-mj-GmN" firstAttribute="trailing" secondItem="6Cc-WJ-uLg" secondAttribute="trailing" id="fkM-Jz-2aY"/>
                             <constraint firstItem="Gbl-Xk-2AC" firstAttribute="leading" secondItem="6Cc-WJ-uLg" secondAttribute="leading" id="hQK-DN-NZg"/>
                             <constraint firstItem="Gbl-Xk-2AC" firstAttribute="top" secondItem="5du-LR-TUI" secondAttribute="top" constant="40" id="k5a-1T-Tit"/>
+                            <constraint firstItem="Wxn-9N-2Zh" firstAttribute="leading" secondItem="6Cc-WJ-uLg" secondAttribute="leading" constant="20" id="kbt-9O-reg"/>
                             <constraint firstItem="0He-8F-Gkl" firstAttribute="trailing" secondItem="6Cc-WJ-uLg" secondAttribute="trailing" id="lzp-gG-MtL"/>
                             <constraint firstItem="Cai-mj-GmN" firstAttribute="leading" secondItem="6Cc-WJ-uLg" secondAttribute="leading" id="sQF-db-WEM"/>
-                            <constraint firstAttribute="bottom" secondItem="Cai-mj-GmN" secondAttribute="bottom" id="wdO-vL-EV8"/>
                             <constraint firstAttribute="bottom" secondItem="0He-8F-Gkl" secondAttribute="bottom" id="yMh-da-dj2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSubmit" destination="gG5-cD-LwM" id="J0f-TD-KZs"/>
                         <outlet property="tabledetail" destination="Cai-mj-GmN" id="acK-bU-qh0"/>
                     </connections>
                 </viewController>
@@ -1202,6 +1238,9 @@
         </namedColor>
         <namedColor name="app_black_white">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cellColor">
+            <color red="0.82352941176470584" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

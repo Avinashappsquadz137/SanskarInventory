@@ -16,4 +16,16 @@ class RoundedView: UIView {
             self.layer.masksToBounds = true
         }
     }
+
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            self.layer.borderWidth = borderWidth
+        }
+    }
+
+    @IBInspectable var borderColor: UIColor? {
+        didSet {
+            self.layer.borderColor = borderColor?.cgColor
+        }
+    }
 }
