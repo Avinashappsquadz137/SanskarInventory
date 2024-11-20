@@ -40,6 +40,7 @@ extension Requestvc: UITableViewDelegate, UITableViewDataSource {
             cell.buttonAction = { [weak self] in
                 self?.didTapOpenButton(at: indexPath.row)
                 print("Button tapped for \(detail.clientName)")
+                
             }
         return cell
     }
@@ -65,14 +66,16 @@ extension Requestvc: UITableViewDelegate, UITableViewDataSource {
 extension Requestvc {
     
     private func didTapOpenButton(at index: Int) {
-        let itemsList = dataList[index].items
-        openItemsList(itemsList)
-    }    
-    private func openItemsList(_ items: [Item]) {
+        let selectedItem = dataList[index]
+        let itemsList = selectedItem.items
+        openItemsList(itemsList, tempID: selectedItem.tempID)
+    }
+    private func openItemsList(_ items: [Item], tempID: String) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "Requestdetailvc") as? Requestdetailvc else {
             return
         }
         vc.itemdetails = items
+        vc.tempID = tempID
         navigationController?.pushViewController(vc, animated: true)
     }
 }

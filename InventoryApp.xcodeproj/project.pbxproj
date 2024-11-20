@@ -38,6 +38,10 @@
 		C7CF2C262C9B0E7F0052A1AA /* Requestdetailvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */; };
 		C7DB76462CEDA5010002511A /* TextFieldDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DB76442CEDA5010002511A /* TextFieldDetailCell.swift */; };
 		C7DB76472CEDA5010002511A /* TextFieldDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7DB76452CEDA5010002511A /* TextFieldDetailCell.xib */; };
+		C7DB76492CEDE1630002511A /* SaveChallanMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DB76482CEDE1630002511A /* SaveChallanMaster.swift */; };
+		C7DB764B2CEDEF970002511A /* CrewMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DB764A2CEDEF970002511A /* CrewMemberModel.swift */; };
+		C7DB764D2CEE05910002511A /* ItemDetailsFillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DB764C2CEE05910002511A /* ItemDetailsFillVC.swift */; };
+		C7DB764F2CEE066D0002511A /* DetailsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DB764E2CEE066D0002511A /* DetailsScreen.storyboard */; };
 		C7E7E3C52CE8BE2A006A00C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3C42CE8BE2A006A00C6 /* HomeViewController.swift */; };
 		C7E7E3C82CE8C16F006A00C6 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3C72CE8C16F006A00C6 /* BaseVC.swift */; };
 		C7E7E3CB2CE8C43D006A00C6 /* ViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E7E3CA2CE8C43D006A00C6 /* ViewDesign.swift */; };
@@ -87,6 +91,10 @@
 		C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestdetailvc.swift; sourceTree = "<group>"; };
 		C7DB76442CEDA5010002511A /* TextFieldDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDetailCell.swift; sourceTree = "<group>"; };
 		C7DB76452CEDA5010002511A /* TextFieldDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldDetailCell.xib; sourceTree = "<group>"; };
+		C7DB76482CEDE1630002511A /* SaveChallanMaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveChallanMaster.swift; sourceTree = "<group>"; };
+		C7DB764A2CEDEF970002511A /* CrewMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMemberModel.swift; sourceTree = "<group>"; };
+		C7DB764C2CEE05910002511A /* ItemDetailsFillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsFillVC.swift; sourceTree = "<group>"; };
+		C7DB764E2CEE066D0002511A /* DetailsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsScreen.storyboard; sourceTree = "<group>"; };
 		C7E7E3C42CE8BE2A006A00C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C7E7E3C72CE8C16F006A00C6 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		C7E7E3CA2CE8C43D006A00C6 /* ViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDesign.swift; sourceTree = "<group>"; };
@@ -226,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				C74A0CDC2C58D05700201F40 /* Main.storyboard */,
+				C7DB764E2CEE066D0002511A /* DetailsScreen.storyboard */,
 				C74A0CD32C58D03B00201F40 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -302,6 +311,8 @@
 			children = (
 				C7CF2C1F2C9AFA300052A1AA /* Request model.swift */,
 				C71B80562CE1FAE70071CD33 /* InventoryModel.swift */,
+				C7DB76482CEDE1630002511A /* SaveChallanMaster.swift */,
+				C7DB764A2CEDEF970002511A /* CrewMemberModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -311,6 +322,7 @@
 			children = (
 				C7E7E3DF2CEB5B9B006A00C6 /* Cell */,
 				C71B805B2CE1FB170071CD33 /* Requestvc.swift */,
+				C7DB764C2CEE05910002511A /* ItemDetailsFillVC.swift */,
 				C7CF2C252C9B0E7F0052A1AA /* Requestdetailvc.swift */,
 			);
 			path = RequestVC;
@@ -404,6 +416,7 @@
 				C74A0CD52C58D03B00201F40 /* LaunchScreen.storyboard in Resources */,
 				C7DB76472CEDA5010002511A /* TextFieldDetailCell.xib in Resources */,
 				C7E7E3D22CE8C9EE006A00C6 /* InventoryViewCell.xib in Resources */,
+				C7DB764F2CEE066D0002511A /* DetailsScreen.storyboard in Resources */,
 				C7E7E3CD2CE8C5BD006A00C6 /* Color.xcassets in Resources */,
 				C74A0CD22C58D03B00201F40 /* Assets.xcassets in Resources */,
 			);
@@ -458,7 +471,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7DB76492CEDE1630002511A /* SaveChallanMaster.swift in Sources */,
 				C7E7E3D82CEB0EEA006A00C6 /* ChallanViewCell.swift in Sources */,
+				C7DB764B2CEDEF970002511A /* CrewMemberModel.swift in Sources */,
+				C7DB764D2CEE05910002511A /* ItemDetailsFillVC.swift in Sources */,
 				6877E9622CEA0F520052EAE8 /* Constant.swift in Sources */,
 				C71B80632CE1FB170071CD33 /* dropdownfile.swift in Sources */,
 				C71B805F2CE1FB170071CD33 /* Additemvc.swift in Sources */,
