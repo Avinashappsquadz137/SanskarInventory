@@ -6,13 +6,23 @@ target 'InventoryApp' do
   use_frameworks!
 pod 'Alamofire'
 pod 'DropDown'
+pod 'IQKeyboardManagerSwift'
 
 
+end
 
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      end
+    end
+  end
 
-
-
-
-  # Pods for InventoryApp
-
+  fuse_path = "./Pods/HyperSDK/Fuse.rb"
+  clean_assets = true # Pass true to re-download all the assets
+  if File.exist?(fuse_path)
+    system("ruby", fuse_path.to_s, clean_assets.to_s)
+  end
 end
