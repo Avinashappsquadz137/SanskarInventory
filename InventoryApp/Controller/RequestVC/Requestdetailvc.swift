@@ -17,7 +17,7 @@ class Requestdetailvc: BaseVC {
     var textFieldValues: [String] = []
     var teamMembers: [String] = []
     var multiSelectValues: [Int: [String]] = [:]
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,17 +33,10 @@ class Requestdetailvc: BaseVC {
     }
     
     @IBAction func btnActionSubmit(_ sender: UIButton) {
-//        let storyboard = UIStoryboard(name: "DetailsScreen", bundle: nil)
-//        if let vc = storyboard.instantiateViewController(withIdentifier: "ItemDetailsFillVC") as? ItemDetailsFillVC {
-//            vc.itemdetails = itemdetails
-//            navigationController?.pushViewController(vc, animated: true)
-//        }
         validateTextFields { isValid, collectedData in
             if isValid {
                 print("All fields are valid. Collected Data: \(collectedData)")
                 apiclall()
-                
-                
             } else {
                 showValidationAlert(message: "Please fill all required fields.")
             }
@@ -80,13 +73,15 @@ extension Requestdetailvc: UITableViewDelegate,UITableViewDataSource {
             let pickerView = UIPickerView()
             pickerView.delegate = self
             pickerView.dataSource = self
-            pickerView.tag = indexPath.row // Tag the picker to identify the field
+            pickerView.tag = indexPath.row
             cell.nameTextField.inputView = pickerView
+            createPickerToolbar(for: cell.nameTextField, withTag: indexPath.row)
         } else {
             cell.nameTextField.inputView = nil
+            createToolbar(for: cell.nameTextField)
         }
         cell.nameTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
-        createToolbar(for: cell.nameTextField)
+        
         return cell
     }
     @objc func textFieldDidChange(_ textField: UITextField) {
@@ -143,8 +138,11 @@ extension Requestdetailvc {
         ApiClient.shared.callmethodMultipart(apiendpoint: Constant.addSaveChallanmaster, method: .post, param: dict, model: SaveChallanMaster.self){ result in
             switch result {
             case .success(let model):
-                print(model)
-                
+                let storyboard = UIStoryboard(name: "DetailsScreen", bundle: nil)
+                if let vc = storyboard.instantiateViewController(withIdentifier: "ItemDetailsFillVC") as? ItemDetailsFillVC {
+                    vc.itemdetails = self.itemdetails
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
             case .failure(let error):
                 print(error)
             }
@@ -177,9 +175,10 @@ extension Requestdetailvc: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return teamMembers[row]
     }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let selectedFieldIndex = pickerView.tag
-
+        
         guard selectedFieldIndex < data.count else {
             print("Invalid index for picker view")
             return
@@ -188,22 +187,47 @@ extension Requestdetailvc: UIPickerViewDelegate, UIPickerViewDataSource {
             print("teamMembers array is empty")
             return
         }
-
         let selectedName = teamMembers[row]
         if multiSelectValues[selectedFieldIndex] == nil {
             multiSelectValues[selectedFieldIndex] = []
         }
-
         if let currentValues = multiSelectValues[selectedFieldIndex], currentValues.contains(selectedName) {
             multiSelectValues[selectedFieldIndex]?.removeAll(where: { $0 == selectedName })
         } else {
             multiSelectValues[selectedFieldIndex]?.append(selectedName)
         }
         textFieldValues[selectedFieldIndex] = multiSelectValues[selectedFieldIndex]?.joined(separator: ", ") ?? ""
-
+        
         if let cell = tabledetail.cellForRow(at: IndexPath(row: selectedFieldIndex, section: 0)) as? TextFieldDetailCell {
             cell.nameTextField.text = textFieldValues[selectedFieldIndex]
         }
     }
-
+    func createPickerToolbar(for textField: UITextField, withTag tag: Int) {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        // Remove Button
+        let removeButton = UIBarButtonItem(title: "Remove", style: .plain, target: self, action: #selector(removePickerSelection(_:)))
+        removeButton.tag = tag
+        
+        // Done Button
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissPicker))
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolbar.setItems([removeButton, flexSpace, doneButton], animated: true)
+        textField.inputAccessoryView = toolbar
+    }
+    @objc func removePickerSelection(_ sender: UIBarButtonItem) {
+        let tag = sender.tag
+        guard let currentValues = multiSelectValues[tag], !currentValues.isEmpty else {
+            return
+        }
+        let removedItem = currentValues.last
+        multiSelectValues[tag]?.removeAll { $0 == removedItem }
+        textFieldValues[tag] = multiSelectValues[tag]?.joined(separator: ", ") ?? ""
+        if let cell = tabledetail.cellForRow(at: IndexPath(row: tag, section: 0)) as? TextFieldDetailCell {
+            cell.nameTextField.text = textFieldValues[tag]
+        }
+        self.view.endEditing(true)
+    }
 }
