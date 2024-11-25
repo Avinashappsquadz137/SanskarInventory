@@ -33,21 +33,21 @@ class Requestdetailvc: BaseVC {
     }
     
     @IBAction func btnActionSubmit(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "DetailsScreen", bundle: nil)
-        if let vc = storyboard.instantiateViewController(withIdentifier: "ItemDetailsFillVC") as? ItemDetailsFillVC {
-            vc.itemdetails = itemdetails
-            navigationController?.pushViewController(vc, animated: true)
-        }
-//        validateTextFields { isValid, collectedData in
-//            if isValid {
-//                print("All fields are valid. Collected Data: \(collectedData)")
-//                apiclall()
-//                
-//                
-//            } else {
-//                showValidationAlert(message: "Please fill all required fields.")
-//            }
+//        let storyboard = UIStoryboard(name: "DetailsScreen", bundle: nil)
+//        if let vc = storyboard.instantiateViewController(withIdentifier: "ItemDetailsFillVC") as? ItemDetailsFillVC {
+//            vc.itemdetails = itemdetails
+//            navigationController?.pushViewController(vc, animated: true)
 //        }
+        validateTextFields { isValid, collectedData in
+            if isValid {
+                print("All fields are valid. Collected Data: \(collectedData)")
+                apiclall()
+                
+                
+            } else {
+                showValidationAlert(message: "Please fill all required fields.")
+            }
+        }
     }
     func validateTextFields(completion: (_ isValid: Bool, _ collectedData: [String]) -> Void) {
         let allFieldsFilled = !textFieldValues.contains(where: { $0.isEmpty })
