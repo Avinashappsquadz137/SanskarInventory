@@ -17,7 +17,7 @@ class Requestdetailvc: BaseVC {
     var textFieldValues: [String] = []
     var teamMembers: [String] = []
     var multiSelectValues: [Int: [String]] = [:]
-    
+    var formattedDate = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,7 @@ class Requestdetailvc: BaseVC {
     }
     
     @IBAction func btnActionSubmit(_ sender: UIButton) {
+        print("textFieldValues before validation: \(textFieldValues)")
         validateTextFields { isValid, collectedData in
             if isValid {
                 print("All fields are valid. Collected Data: \(collectedData)")
@@ -76,7 +77,11 @@ extension Requestdetailvc: UITableViewDelegate,UITableViewDataSource {
             pickerView.tag = indexPath.row
             cell.nameTextField.inputView = pickerView
             createPickerToolbar(for: cell.nameTextField, withTag: indexPath.row)
-        } else {
+        }
+//        else if data[indexPath.row] == "Eway Bill Date" {
+//            cell.nameTextField.addTarget(self, action: #selector(datetextfiels(_:)), for: .editingDidBegin)
+//        }
+        else {
             cell.nameTextField.inputView = nil
             createToolbar(for: cell.nameTextField)
         }
@@ -90,6 +95,20 @@ extension Requestdetailvc: UITableViewDelegate,UITableViewDataSource {
             textFieldValues[index] = textField.text ?? ""
         }
     }
+//    @objc func datetextfiels(_ textField: UITextField) {
+//        let index = textField.tag
+//        if data[index] == "Eway Bill Date" {
+//            IosDatePicker().showDate(animation: .zoomIn, pickerMode: .date) { date in
+//                textField.text = Utils.dateString(date: date, format: "yyyy-MM-dd")
+//            }
+//            if index < self.textFieldValues.count {
+//                self.textFieldValues[index] = formattedDate
+//            }
+//            
+//            // Debug: Print the updated textFieldValues
+//            print("Updated textFieldValues: \(self.textFieldValues)")
+//        }
+//    }
     func createToolbar(for textField: UITextField) {
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
